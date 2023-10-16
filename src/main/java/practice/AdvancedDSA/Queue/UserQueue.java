@@ -1,0 +1,47 @@
+package practice.AdvancedDSA.Queue;
+
+import java.util.Stack;
+
+public class UserQueue {
+    public static class UserQueue1 {
+        static Stack<Integer> s;
+        static Stack<Integer> s1;
+        /** Initialize your data structure here. */
+        UserQueue1() {
+            s = new Stack<>();
+            s1 = new Stack<>();
+        }
+
+        /** Push element X to the back of queue. */
+        static void push(int X) {
+            s.push(X);
+        }
+
+        /** Removes the element from in front of queue and returns that element. */
+        static int pop() {
+            if(s1.isEmpty()){
+                while(!s.isEmpty())
+                {
+                    s1.push(s.pop());
+                }
+            }
+            return s1.pop();
+        }
+
+        /** Get the front element of the queue. */
+        static int peek() {
+            if(s1.isEmpty()){
+                while(!s.isEmpty()){
+                    s1.push(s.pop());
+                }
+            }
+            return s1.peek();
+        }
+
+        /** Returns whether the queue is empty. */
+        static boolean empty() {
+            return s1.isEmpty() && s.isEmpty();
+        }
+    }
+
+}

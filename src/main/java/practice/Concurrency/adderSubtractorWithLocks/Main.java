@@ -1,7 +1,5 @@
 package practice.Concurrency.adderSubtractorWithLocks;
 
-import practice.Concurrency.adderSubtractor.Value;
-
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

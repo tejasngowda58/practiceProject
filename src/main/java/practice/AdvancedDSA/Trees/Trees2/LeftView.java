@@ -1,6 +1,5 @@
 package practice.AdvancedDSA.Trees.Trees2;
 
-import HackerRank.scaler.AdvancedDSA.Trees.TreeNode;
 import practice.AdvancedDSA.Trees.TreeNode;
 
 import java.util.ArrayList;

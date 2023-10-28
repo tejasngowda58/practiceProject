@@ -1,7 +1,5 @@
 package practice.Concurrency.adderSubtractorWithLocks;
 
-import HackerRank.scaler.Concurrency.adderSubtractor.Value;
-
 import java.util.concurrent.Callable;
 import java.util.concurrent.locks.Lock;
 

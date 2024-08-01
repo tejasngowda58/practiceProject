@@ -1,5 +1,7 @@
 package practice.LLD.DesignPatterns.Builder;
 
+import java.io.IOException;
+
 public class Builder {
     private String firstName;
     private String lastName;
@@ -11,7 +13,7 @@ public class Builder {
     private float psp;
     private String batch;
 
-    public Student build(){
+    public Student build() throws IOException {
         return new Student(this);
     }
 
